@@ -2,7 +2,17 @@ package string;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(nTwice("1234567890", 2));
+        System.out.println("ja: " + twoChar("java", 0));
+        System.out.println("av: " + twoChar("java", 1));
+        System.out.println("va: " + twoChar("java", 2));
+        System.out.println("ja: " + twoChar("java", 3));
+    }
+
+    public static String twoChar(String str, int index) {
+        if (index > 0 && index <= str.length() - 2) {
+            return str.substring(index, index + 2);
+        }
+        return str.substring(0, 2);
     }
 
     public static String nTwice(String str, int n) {
