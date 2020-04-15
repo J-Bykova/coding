@@ -4,14 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("\"last\", \"chars\" should be ls: " + WorkWithString.lastChars("last", "chars"));
+        System.out.println("'abc', 'cat' should be 'abcat': " + WorkWithString.conCat("abc", "cat"));
         System.out.println("----------");
-        System.out.println("\"yo\", \"java\" should be ya: " + WorkWithString.lastChars("yo", "java"));
+        System.out.println("'dog', 'cat' should be 'dogcat': " + WorkWithString.conCat("dog", "cat"));
         System.out.println("----------");
-        System.out.println("\"h\", \"\" should be h@: " + WorkWithString.lastChars("h", ""));
+        System.out.println("'abc', '' should be 'abc': " + WorkWithString.conCat("abc", ""));
         System.out.println("----------");
-        System.out.println("\"\", \"\" should be @@: " + WorkWithString.lastChars("", ""));
+        System.out.println("'', '' should be '': " + WorkWithString.conCat("", ""));
         System.out.println("----------");
-
     }
 }
