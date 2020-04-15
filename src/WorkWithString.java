@@ -1,12 +1,24 @@
-package string;
+public class WorkWithString {
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("and: " + middleThree("Candy"));
-        System.out.println("and: " + middleThree("and"));
-        System.out.println("lvi: " + middleThree("solving"));
+    public static boolean hasBad(String str) {
+        String bad = "bad";
+        if (str.length() < bad.length()) {
+            return false;
+        }
+        if (str.length() == bad.length()) {
+            return str.equals(bad);
+        }
+
+        if (str.substring(0, 3).equals(bad)) {
+            return true;
+        }
+        if (str.substring(1, 4).equals(bad)) {
+            return true;
+        }
+        return false;
 
     }
+
 
     public static String middleThree(String str) {
         if (str.length() <= 3) {
