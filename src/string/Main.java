@@ -2,11 +2,14 @@ package string;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(endsLy("j"));
+        System.out.println(nTwice("1234567890", 2));
     }
 
     public static String nTwice(String str, int n) {
-
+        String firstN = str.substring(0, n);
+        String lastN = str.substring(str.length() - n);
+        String result = firstN + lastN;
+        return result;
     }
 
     public static boolean endsLy(String str) {
