@@ -1,6 +1,20 @@
 public class WorkWithString {
 
 
+    public static String lastChars(String a, String b) {
+        if (a.isEmpty() && b.isEmpty()) {
+            return "@@";
+        }
+        if (a.isEmpty()) {
+            return "@" + b.substring(b.length() - 1);
+        }
+        if (b.isEmpty()) {
+            return a.substring(0, 1) + "@";
+        }
+
+        return a.substring(0, 1) + b.substring(b.length() - 1);
+    }
+
     public static String atFirst(String str) {
 
         int minSize = 2;
@@ -12,7 +26,6 @@ public class WorkWithString {
         }
         return str.substring(0, minSize);
     }
-
 
     public static boolean hasBad(String str) {
         String bad = "bad";

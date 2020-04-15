@@ -4,16 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("'hello' should be he: " + WorkWithString.atFirst("hello"));
+        System.out.println("\"last\", \"chars\" should be ls: " + WorkWithString.lastChars("last", "chars"));
         System.out.println("----------");
-        System.out.println("'hi' should be hi: " + WorkWithString.atFirst("hi"));
+        System.out.println("\"yo\", \"java\" should be ya: " + WorkWithString.lastChars("yo", "java"));
         System.out.println("----------");
-        System.out.println("'h' should be h@: " + WorkWithString.atFirst("h"));
+        System.out.println("\"h\", \"\" should be h@: " + WorkWithString.lastChars("h", ""));
         System.out.println("----------");
-        System.out.println("' ' should be @@: " + WorkWithString.atFirst(""));
+        System.out.println("\"\", \"\" should be @@: " + WorkWithString.lastChars("", ""));
         System.out.println("----------");
-
-
 
     }
 }
