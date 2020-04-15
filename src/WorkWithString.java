@@ -1,5 +1,19 @@
 public class WorkWithString {
 
+
+    public static String atFirst(String str) {
+
+        int minSize = 2;
+        if (str.isEmpty()) {
+            return "@@";
+        }
+        if (str.length() < minSize) {
+            return str + "@";
+        }
+        return str.substring(0, minSize);
+    }
+
+
     public static boolean hasBad(String str) {
         String bad = "bad";
         if (str.length() < bad.length()) {
@@ -18,7 +32,6 @@ public class WorkWithString {
         return false;
 
     }
-
 
     public static String middleThree(String str) {
         if (str.length() <= 3) {
