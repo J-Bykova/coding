@@ -2,10 +2,17 @@ package string;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("ja: " + twoChar("java", 0));
-        System.out.println("av: " + twoChar("java", 1));
-        System.out.println("va: " + twoChar("java", 2));
-        System.out.println("ja: " + twoChar("java", 3));
+        System.out.println("and: " + middleThree("Candy"));
+        System.out.println("and: " + middleThree("and"));
+        System.out.println("lvi: " + middleThree("solving"));
+
+    }
+
+    public static String middleThree(String str) {
+        if (str.length() <= 3) {
+            return str;
+        }
+        return str.substring(str.length() / 2 - 1, str.length() / 2 + 2);
     }
 
     public static String twoChar(String str, int index) {
