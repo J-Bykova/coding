@@ -1,5 +1,16 @@
 public class WorkWithString {
 
+    public static String seeColor(String str) {
+        if (str.startsWith("red")) {
+            return "red";
+        }
+        if (str.startsWith("blue")) {
+            return "blue";
+        }
+        return "";
+
+    }
+
     public static String lastTwo(String str) {
         if (str.isEmpty()) {
             return str;
