@@ -1,5 +1,20 @@
 public class WorkWithString {
 
+    public static String lastTwo(String str) {
+        if (str.isEmpty()) {
+            return str;
+        }
+        if (str.length() < 2) {
+            return str;
+        }
+        String lastLetter = str.substring(str.length() - 1);
+        String secondToLastLetter = str.substring(str.length() - 2, str.length() - 1);
+        if (str.length() == 2) {
+            return lastLetter + secondToLastLetter;
+        }
+        return str.substring(0, str.length() - 2) + lastLetter + secondToLastLetter;
+    }
+
     public static String conCat(String a, String b) {
         if (a.isEmpty()) {
             return b;
@@ -17,7 +32,6 @@ public class WorkWithString {
 
         return a + b;
     }
-
 
     public static String lastChars(String a, String b) {
         if (a.isEmpty() && b.isEmpty()) {
