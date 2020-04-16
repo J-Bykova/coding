@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class StringsTestSuite {
+public class WorkWithStringFrontAgainTestSuite {
     @Test
     public void edited_should_be_true() {
         assertEquals(true, WorkWithString.frontAgain("edited"));
