@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class Sum3TestSuite {
+public class SumArrTestSuite {
     @Test
     public void test1() {
         int[] arr = {};
