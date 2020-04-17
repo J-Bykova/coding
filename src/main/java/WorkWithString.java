@@ -1,5 +1,18 @@
 public class WorkWithString {
 
+    public static String extraFront(String str) {
+        if (str.isEmpty()) {
+            return str;
+        }
+        if (str.length() == 1) {
+            return str + str + str;
+        }
+        if (str.length() == 2) {
+            return str + str + str;
+        }
+        return str.substring(0, 2) + str.substring(0, 2) + str.substring(0, 2);
+    }
+
     public static String minCat(String a, String b) {
         if (a.isEmpty() || b.isEmpty()) {
             return "";
@@ -8,7 +21,7 @@ public class WorkWithString {
             return a + b;
         }
         if (a.length() < b.length()) {
-            return a + b.substring(b.length()-a.length());
+            return a + b.substring(b.length() - a.length());
         }
         return a.substring(a.length() - b.length()) + b;
     }
