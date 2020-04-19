@@ -2,7 +2,6 @@ package work_with_logic.first_level;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.omg.CORBA.TRANSACTION_MODE;
 
 public class CigarPartyTestSuite {
 
