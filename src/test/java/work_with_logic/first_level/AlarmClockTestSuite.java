@@ -21,75 +21,75 @@ public class AlarmClockTestSuite {
 
     // без каникул на буднях
     @Test
-    public void test1() {
+    public void should_return_alarmInWeekdays_if_it_is_monday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekdays, AlarmClock.alarmClock(monday, iAmNotOnVacation));
     }
 
     @Test
-    public void test2() {
+    public void should_return_alarmInWeekdays_if_it_is_tuesday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekdays, AlarmClock.alarmClock(tuesday, iAmNotOnVacation));
     }
 
     @Test
-    public void test3() {
+    public void should_return_alarmInWeekdays_if_it_is_wednesday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekdays, AlarmClock.alarmClock(wednesday, iAmNotOnVacation));
     }
 
     @Test
-    public void test4() {
+    public void should_return_alarmInWeekdays_if_it_is_thursday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekdays, AlarmClock.alarmClock(thursday, iAmNotOnVacation));
     }
 
     @Test
-    public void test5() {
+    public void should_return_alarmInWeekdays_if_it_is_friday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekdays, AlarmClock.alarmClock(friday, iAmNotOnVacation));
     }
 
     //без каникул на выходных
     @Test
-    public void test6() {
+    public void should_return_alarmInWeekend_if_it_is_saturday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(saturday, iAmNotOnVacation));
     }
 
     @Test
-    public void test7() {
+    public void should_return_alarmInWeekend_if_it_is_sunday_and_not_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(sunday, iAmNotOnVacation));
     }
 
     //на каникулах на буднях
     @Test
-    public void test8() {
+    public void should_return_alarmInWeekend_if_it_is_monday_and_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(monday, iAmOnVacation));
     }
 
     @Test
-    public void test9() {
+    public void should_return_alarmInWeekend_if_it_is_tuesday_and_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(tuesday, iAmOnVacation));
     }
 
     @Test
-    public void test10() {
+    public void should_return_alarmInWeekend_if_it_is_wednesday_and_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(wednesday, iAmOnVacation));
     }
 
     @Test
-    public void test11() {
+    public void should_return_alarmInWeekend_if_it_is_thursday_and_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(thursday, iAmOnVacation));
     }
 
     @Test
-    public void test12() {
+    public void should_return_alarmInWeekend_if_it_is_friday_and_vacation() {
         Assert.assertEquals(alarmInWeekend, AlarmClock.alarmClock(friday, iAmOnVacation));
     }
 
     //на каникулах на выходных
     @Test
-    public void test13() {
+    public void should_return_alarmOff_if_it_is_sunday_and_vacation() {
         Assert.assertEquals(alarmOff, AlarmClock.alarmClock(sunday, iAmOnVacation));
     }
 
     @Test
-    public void test14() {
+    public void should_return_alarmOff_if_it_is_saturday_and_vacation() {
         Assert.assertEquals(alarmOff, AlarmClock.alarmClock(saturday, iAmOnVacation));
     }
 
