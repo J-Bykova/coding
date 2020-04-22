@@ -6,23 +6,23 @@ import static org.junit.Assert.assertEquals;
 
 public class Sum2TestSuite {
     @Test
-    public void test1() {
-        int[] arr = {};
-        int result = 0;
-        assertEquals(result, Sum2.sum2(arr));
+    public void should_return_0_if_got_empty_array() {
+        int[] inputArr = {};
+        int expectedResult = 0;
+        assertEquals(expectedResult, Sum2.sum2(inputArr));
     }
 
     @Test
-    public void test2() {
-        int[] arr = {1};
-        int result = 1;
-        assertEquals(result, Sum2.sum2(arr));
+    public void should_return_first_element_if_array_size_is_1() {
+        int[] inputArr = {1};
+        int expectedResult = 1;
+        assertEquals(expectedResult, Sum2.sum2(inputArr));
     }
 
     @Test
-    public void test3() {
-        int[] arr = {1, 2, 3};
-        int result = 3;
-        assertEquals(result, Sum2.sum2(arr));
+    public void should_return_sum_first_and_second_elements() {
+        int[] inputArr = {1, 2, 3};
+        int expectedResult = 3;
+        assertEquals(expectedResult, Sum2.sum2(inputArr));
     }
 }
