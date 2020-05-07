@@ -14,21 +14,21 @@ public class FizzString2TestSuite {
     @Test
     public void if_number_is_divisible_by_3_should_return_Fizz() {
         int inputNum = 3;
-        String expectedStr = "Fizz";
+        String expectedStr = "Fizz!";
         Assert.assertEquals(expectedStr, FizzString2.fizzString2(inputNum));
     }
 
     @Test
     public void if_number_is_divisible_by_5_should_return_Buzz() {
         int inputNum = 5;
-        String expectedStr = "Buzz";
+        String expectedStr = "Buzz!";
         Assert.assertEquals(expectedStr, FizzString2.fizzString2(inputNum));
     }
 
     @Test
     public void if_number_is_divisible_by_3_and_5_should_return_FizzBuzz() {
         int inputNum = 15;
-        String expectedStr = "FizzBuzz";
+        String expectedStr = "FizzBuzz!";
         Assert.assertEquals(expectedStr, FizzString2.fizzString2(inputNum));
     }
 }
