@@ -11,7 +11,7 @@ public class MixStartTestSuite {
 
     @Test
     public void test2(){
-        Assert.assertFalse(MixStart.mixStart("pix snacks"));
+        Assert.assertTrue(MixStart.mixStart("pix snacks"));
     }
 
     @Test
