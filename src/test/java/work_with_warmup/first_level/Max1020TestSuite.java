@@ -21,12 +21,27 @@ public class Max1020TestSuite {
 
     @Test
     public void test4() {
-        Assert.assertEquals(0, Max1020.max1020(9, 20));
+        Assert.assertEquals(20, Max1020.max1020(9, 20));
     }
 
     @Test
     public void test5() {
-        Assert.assertEquals(0, Max1020.max1020(10, 21));
+        Assert.assertEquals(10, Max1020.max1020(10, 21));
+    }
+
+    @Test
+    public void test6() {
+        Assert.assertEquals(10, Max1020.max1020(21, 10));
+    }
+
+    @Test
+    public void test7() {
+        Assert.assertEquals(11, Max1020.max1020(11, 9));
+    }
+
+    @Test
+    public void test8() {
+        Assert.assertEquals(11, Max1020.max1020(9, 11));
     }
 
 }
