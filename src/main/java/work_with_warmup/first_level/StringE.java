@@ -8,6 +8,7 @@ public class StringE {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == 'e') count++;
         }
+
         return (count >= 1 && count <= 3);
     }
 }
